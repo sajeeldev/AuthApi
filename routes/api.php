@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 // This resource function take the name and the resource controller that would create all the routes for us
 // apiresource is convenient function similar to resource function but this function is not looking to create and edit becuase that belongs to web application
-Route::resource('/',[PostController::class]);
+Route::apiResource('posts', PostController::class);
 
 Route::get('/', function(){
     return 'API';
